@@ -2,7 +2,7 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
     version="2.4">
 
-    <display-name>YOUR_SERVICE</display-name>
+    <display-name>ChainDo App</display-name>
 
     <servlet>
        <servlet-name>Jersey Web Application</servlet-name>
@@ -13,7 +13,7 @@
         </init-param>
         <init-param>
            <param-name>jersey.config.server.provider.packages</param-name>
-         <param-value>com.chaindo.webapp</param-value>
+         <param-value>com.chaindo</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>

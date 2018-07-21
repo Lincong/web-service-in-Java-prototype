@@ -15,8 +15,8 @@ public class ExampleRequest {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String example(@PathParam("example") String example) {
-       Logger.getLogger(getClass()).info("Working???");
-       return example + "!!!!";
+       Logger.getLogger(getClass()).info("Working!");
+       return example + " hahahahhahah";
     }
 
 }
