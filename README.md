@@ -4,4 +4,5 @@ Build:
   gradle build
 
 Start server:
-  gradle jettyRunWar
+  1. gradle jettyRunWar
+  2. In browser: http://localhost:8080/YOUR_PATH/example/<resource>

@@ -1,4 +1,4 @@
-package com.example.hello;
+package com.chaindo.webapp;
 
 import org.glassfish.jersey.jackson.JacksonFeature;
 import org.glassfish.jersey.server.ResourceConfig;

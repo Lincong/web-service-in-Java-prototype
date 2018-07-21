@@ -1,4 +1,4 @@
-package com.example.hello;
+package com.chaindo.webapp;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
