@@ -6,4 +6,6 @@ Build:
 Start server:
   1. gradle jettyRunWar
   2. In browser: http://localhost:8080/chiando/<resource>
-     eg: http://localhost:8080/chiando/user
+
+        eg: 
+        http://localhost:8080/chiando/users/<userID>

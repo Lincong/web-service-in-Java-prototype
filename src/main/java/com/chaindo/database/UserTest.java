@@ -1,6 +1,5 @@
 package com.chaindo.database;
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -14,7 +13,8 @@ public class UserTest {
     private int id;
     @Column(name="name")
     private String name;
-    public int getId() {
+    public int getId()
+    {
         return id;
     }
     public void setId(int id) {
