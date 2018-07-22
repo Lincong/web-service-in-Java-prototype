@@ -28,7 +28,7 @@ public class UserResource {
         session.save(person);
         session.getTransaction().commit();
         session.close();
-
+        logger.info("Session closed");
         return user;
     }
 

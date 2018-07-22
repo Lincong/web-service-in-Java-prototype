@@ -11,12 +11,6 @@ public class HibernateUtil {
     static {
         String hibernatePropsFilePath = "/Users/lincongli/Desktop/startup/backend-prototype/gradle-practice/src/main/resources/hibernate.cfg.xml";
         File hibernatePropsFile = new File(hibernatePropsFilePath);
-//        Configuration configuration = new Configuration().configure(hibernatePropsFile);
-        System.out.println("**********");
-//        System.out.println(configuration.toString());
-        System.out.println("**********");
-
-        ///
         Configuration config = new Configuration().configure(hibernatePropsFile);
         config.addAnnotatedClass(com.chaindo.database.UserTest.class);
 
