@@ -38,6 +38,7 @@ public class ResourceFilter implements ContainerRequestFilter {
                         .parseClaimsJws(token)
                         .getBody();
 
+                // TODO
                 // 根据username查询是否存在此用户
                 // String username = jwts.getSubject();
                 // 判断token版本是否一致

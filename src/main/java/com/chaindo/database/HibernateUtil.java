@@ -9,6 +9,7 @@ import java.io.File;
 public class HibernateUtil {
     private static SessionFactory sessionFactory ;
     static {
+        // TODO
         String hibernatePropsFilePath = "/Users/lincongli/Desktop/startup/backend-prototype/gradle-practice/src/main/resources/hibernate.cfg.xml";
         File hibernatePropsFile = new File(hibernatePropsFilePath);
         Configuration config = new Configuration().configure(hibernatePropsFile);
