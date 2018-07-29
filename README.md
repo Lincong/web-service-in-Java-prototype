@@ -7,5 +7,15 @@ Start server:
   1. gradle jettyRunWar
   2. In browser: http://localhost:8080/chiando/<resource>
 
-        eg: 
+        example:
         http://localhost:8080/chiando/users/<userID>
+
+URL endpoints:
+
+Login: http://localhost:8080/chiando/authentication/login
+
+
+
+Example of using MySQL script:
+
+mysql --user="username" --database="databasename" --password="yourpassword" < "filepath"
