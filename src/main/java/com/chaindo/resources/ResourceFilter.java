@@ -48,7 +48,11 @@ public class ResourceFilter implements ContainerRequestFilter {
 
                 // TODO
                 // 根据username查询是否存在此用户
-                // String username = jwts.getSubject();
+                 String username = jwts.getSubject();
+                 if(!UserLoggedIn.userLoggedIn(username)){
+                     logger.error("user with username " + username + "does not exist");
+                     throw new Exception();
+                 }
                 // 判断token版本是否一致
                 // String version = jwts.getId();
             } catch (ExpiredJwtException e) {
@@ -57,7 +61,6 @@ public class ResourceFilter implements ContainerRequestFilter {
                 response = Response.status(Response.Status.FORBIDDEN).entity("Token is invalid").build();
             }
         }
-
         ctx.abortWith(response);
     }
 }

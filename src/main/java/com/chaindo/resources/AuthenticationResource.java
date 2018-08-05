@@ -11,6 +11,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Path("authentication")
 public class AuthenticationResource {
@@ -42,6 +44,8 @@ public class AuthenticationResource {
                     .setExpiration(expireTime)  // expire time
                     .claim("email", "abc@gmail.com") // custom JWT Claims
                     .compact();
+
+            UserLoggedIn.logInUser(username);
 
             return Response.status(Response.Status.CREATED).entity("{\"jwt\":\"" + jwt + "\"}").build();
         }
